@@ -118,6 +118,42 @@ footer {
     transform: translateY(-3px);
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin: 0;
+}
+
+/* 모바일 화면 */
+@media (max-width: 700px) {
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 200px;
+    }
+}
+
 footer p {
     color: #777777;
     font-size: 14px;
