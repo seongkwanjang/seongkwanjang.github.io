@@ -1,3 +1,2 @@
 # seongkwanjang.github.io
 
-Hi.
