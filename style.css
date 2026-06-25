@@ -68,18 +68,29 @@ section p {
 }
 
 .contact-info {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 6px;
-    margin-bottom: 22px;
-    color: #666666;
-    font-size: 15px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap: 8px;
+margin-top: 18px;
+margin-left: auto;
+color: #666666;
+font-size: 15px;
 }
 
 .contact-info i {
-    color: #777777;
-    font-size: 14px;
+color: #777777;
+font-size: 14px;
+}
+
+.email {
+letter-spacing: 0.2px;
+}
+
+.email-symbol {
+margin: 0 2px;
+color: #888888;
+font-size: 13px;
 }
 
 .email {
@@ -177,4 +188,29 @@ footer p {
     section {
         padding: 20px;
     }
+}
+
+.research-keywords {
+    margin: 4px 0 8px;
+    color: #555555;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+}
+
+.publication-list {
+margin: 0;
+padding-left: 24px;
+}
+
+.publication-list li {
+padding-left: 6px;
+margin-bottom: 18px;
+line-height: 1.7;
+}
+
+.publication-list li {
+margin-bottom: 0;
 }
