@@ -1,11 +1,10 @@
-/* for all */
+/* Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* all pages */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,97 +12,72 @@ body {
     background-color: #f7f7f7;
 }
 
-/* upper */
+/* Header */
 header {
-    background-color: white;
-    padding: 30px 10%;
-    border-bottom: 1px solid #dddddd;
+    padding: 75px 10% 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 header h1 {
-    font-size: 32px;
     margin-bottom: 15px;
+    font-size: 32px;
 }
 
-/* upper menu */
+/* Fixed navigation */
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
     display: flex;
     gap: 25px;
+
+    width: 100%;
+    padding: 14px 10%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #ddd;
 }
 
 nav a {
-    color: #333333;
-    text-decoration: none;
+    color: #333;
     font-weight: bold;
+    text-decoration: none;
 }
 
-nav a:hover {
-    color: #0066cc;
+nav a:hover,
+.social-links a:hover {
+    color: #06c;
 }
 
-/* main */
+/* Main layout */
 main {
     width: 80%;
     max-width: 1000px;
     margin: 40px auto;
 }
 
-/* sections */
 section {
-    background-color: white;
-    padding: 30px;
     margin-bottom: 30px;
+    padding: 30px;
+    background-color: #fff;
     border-radius: 8px;
+    scroll-margin-top: 80px;
 }
 
 section h2 {
-    font-size: 24px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #222222;
     padding-bottom: 8px;
+    font-size: 24px;
+    border-bottom: 2px solid #222;
 }
 
 section p {
-    color: #555555;
+    color: #555;
 }
 
-.contact-info {
-display: flex;
-align-items: center;
-justify-content: flex-end;
-gap: 8px;
-margin-top: 18px;
-margin-left: auto;
-color: #666666;
-font-size: 15px;
-}
-
-.contact-info i {
-color: #777777;
-font-size: 14px;
-}
-
-.email {
-letter-spacing: 0.2px;
-}
-
-.email-symbol {
-margin: 0 2px;
-color: #888888;
-font-size: 13px;
-}
-
-.email {
-    letter-spacing: 0.2px;
-}
-
-.email-symbol {
-    margin: 0 2px;
-    color: #888888;
-    font-size: 13px;
-}
-
-
+/* About */
 .about-container {
     display: flex;
     align-items: center;
@@ -111,12 +85,12 @@ font-size: 13px;
 }
 
 .profile-photo {
+    flex-shrink: 0;
     width: 180px;
     height: 220px;
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
-    flex-shrink: 0;
 }
 
 .about-text {
@@ -127,75 +101,56 @@ font-size: 13px;
     margin: 0;
 }
 
-/* for mobile screens */
-@media (max-width: 700px) {
-    .about-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .profile-photo {
-        width: 160px;
-        height: 200px;
-    }
+/* Contact */
+.contact-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    margin-left: auto;
+    color: #666;
+    font-size: 15px;
 }
 
-footer p {
-    color: #777777;
+.contact-info i {
+    color: #777;
     font-size: 14px;
 }
 
-@media (max-width: 700px) {
-    header {
-        padding: 25px 5%;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    main {
-        width: 90%;
-    }
-
-    section {
-        padding: 20px;
-    }
+.email {
+    letter-spacing: 0.2px;
 }
 
-/* keywords */
+.email-symbol {
+    margin: 0 2px;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Research keywords */
 .research-keywords {
     margin: 4px 0 8px;
-    color: #555555;
+    color: #555;
     font-family: "Times New Roman", Times, serif;
     font-size: 17px;
     font-style: italic;
-    font-weight: 400;
     letter-spacing: 0.1px;
 }
 
 /* Publications */
 .publication-list {
-margin: 0;
-padding-left: 24px;
+    padding-left: 24px;
 }
 
 .publication-list li {
-padding-left: 6px;
-margin-bottom: 18px;
-line-height: 1.7;
+    padding-left: 6px;
+    line-height: 1.7;
 }
 
-.publication-list li {
-margin-bottom: 0;
-}
-
-/* In Progress */
+/* Projects */
 .project {
     margin-bottom: 2rem;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .project-header {
@@ -203,14 +158,12 @@ margin-bottom: 0;
     justify-content: space-between;
     align-items: flex-start;
     gap: 1rem;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .project-header h3 {
-    margin: 0 0 0.5rem 0;
     flex: 1;
     min-width: 0;
+    margin-bottom: 0.5rem;
     overflow-wrap: break-word;
 }
 
@@ -223,31 +176,35 @@ margin-bottom: 0;
 .project ul {
     margin-top: 0.5rem;
     padding-left: 1.4rem;
-    box-sizing: border-box;
 }
 
 .project li {
     overflow-wrap: break-word;
-    word-break: normal;
 }
 
-@media (max-width: 600px) {
-    .project-header {
-        flex-direction: column;
-        gap: 0.2rem;
-    }
+.paper-link {
+    margin-left: 6px;
+    color: #666;
+    font-size: 0.9em;
+    text-decoration: none;
+}
 
-    .project-header span {
-        white-space: normal;
-    }
+.paper-link:hover {
+    color: #0066cc;
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    text-align: center;
     padding: 30px 20px;
-    background-color: white;
-    border-top: 1px solid #dddddd;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    color: #777;
+    font-size: 14px;
 }
 
 .social-links {
@@ -258,13 +215,51 @@ footer {
 }
 
 .social-links a {
-    color: #333333;
+    color: #333;
     font-size: 28px;
     text-decoration: none;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .social-links a:hover {
-    color: #0066cc;
     transform: translateY(-3px);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    header {
+        padding: 25px 5%;
+    }
+
+    nav,
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 200px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .project-header span {
+        white-space: normal;
+    }
 }
