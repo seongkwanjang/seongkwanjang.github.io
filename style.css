@@ -231,7 +231,6 @@ footer p {
         padding: 25px 5%;
     }
 
-    nav,
     .about-container {
         flex-direction: column;
         align-items: flex-start;
@@ -239,8 +238,12 @@ footer p {
 
     nav {
         gap: 10px;
+        padding: 10px 4%;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow-x: auto;
     }
-
+    
     main {
         width: 90%;
     }
