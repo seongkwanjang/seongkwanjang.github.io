@@ -32,7 +32,7 @@
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
         <a href="#research">Research</a>
-        <a href="#in-progress">In Progress</a>
+        <a href="#research-contributed">Research (Contributed)</a>
         <!a href="#beyond-research"><!Beyond Research><!/a>
     </nav>
 </header>
@@ -128,41 +128,53 @@
 
         <section id="research">
             <h2>Research</h2>
-            <div class="project">
-                <div class="project-header">
-                    <h3>Hysteresis in Soft Robotics</h3>
-                    <span>Sep. 2024 – Aug. 2025</span>
+            <div class="project-header">
+                <h3>Hysteresis in Soft Robotics</h3>
+                <span>Sep. 2024 – Aug. 2025</span>
+            </div>
+                <div class="project-container">
+                    <div class="project-image">
+                        <img
+                            src="Hys figure.png"
+                            alt="Hardware-based hysteresis compensation concept"
+                        >
+                    </div>
+
+                    <div class="project-content">
+
+                        <p>
+                            Hysteresis in soft pneumatic actuators leads to complex and unpredictable actuations, 
+                            resulting in difficulties of modeling and control. Previous studies 
+                            inevitably involve complex hysteresis modeling, 
+                            additional compensators or controllers for hysteresis compensation, 
+                            which in turn lead to high computational costs. In this paper, we propose 
+                            a novel hysteresis compensation approach by combining 
+                            two counteractive hysteretic components. As this hysteresis compensation approach 
+                            is only based on the hardware, complex modeling and additional compensators or controllers 
+                            are unnecessary.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Extended prior work (bachelor's thesis) on 
+                                hysteresis of a Yoshimura origami pneumatic pump into a 
+                                <strong>novel hardware-based hysteresis compensation approach</strong>.
+                            </li>
+                            <li>
+                                Proposed a theoretical framework of the approach with 
+                                <strong>mathematical proof and parametric study</strong> 
+                                using the Prandtl-Ishlinskii (P-I) hysteresis model.
+                            </li>
+                            <li>
+                                <strong>Analyzed hysteresis compensation</strong> 
+                                using a within the combination of an origami pump and soft pneumatic actuator 
+                                with validation experiments and P-I model optimized with GA + Nelder-Mead algorithm.
+                            </li>
+                        </ul>
+
+                        <br>
+                    </div>
                 </div>
-                <p>
-                    Hysteresis in soft pneumatic actuators leads to complex and unpredictable actuations, 
-                    resulting in difficulties of modeling and control. Previous studies 
-                    inevitably involve complex hysteresis modeling, 
-                    additional compensators or controllers for hysteresis compensation, 
-                    which in turn lead to high computational costs. In this paper, we propose 
-                    a novel hysteresis compensation approach by combining 
-                    two counteractive hysteretic components. As this hysteresis compensation approach 
-                    is only based on the hardware, complex modeling and additional compensators or controllers 
-                    are unnecessary.
-                </p>
-
-                <ul>
-                    <li>
-                        Extended prior work (bachelor's thesis) on 
-                        hysteresis of a Yoshimura origami pneumatic pump into a 
-                        <strong>novel hardware-based hysteresis compensation approach</strong>.
-                    </li>
-                    <li>
-                        Proposed a theoretical framework of the approach with 
-                        <strong>mathematical proof and parametric study</strong> 
-                        using the Prandtl-Ishlinskii (P-I) hysteresis model.
-                    </li>
-                    <li>
-                        <strong>Analyzed hysteresis compensation</strong> 
-                        using a within the combination of an origami pump and soft pneumatic actuator 
-                        with validation experiments and P-I model optimized with GA + Nelder-Mead algorithm.
-                    </li>
-                </ul>
-
                 <br>
                 <h4>Related Paper:</h4>
                     <p>
@@ -176,31 +188,34 @@
                             rel="noopener noreferrer">DOI ↗
                         </a>
                     </p>
-            </div>
             <br>
+
             <div class="project">
                 <div class="project-header">
-                    <h3>Machine Learning for Sensor Signal Processing</h3>
-                    <span>May. 2025 – Dec. 2025</span>
+                    <h3>System Identification of Soft Robots (In Progress)</h3>
+                    <span>Aug. 2025 – Present</span>
                 </div>
+
                 <ul>
                     <li>
-                    Developed a <strong>1D-CNN machine learning pipeline</strong> 
-                    for classifying location, depth, and existence 
-                    of the internal defects in steel plates with piezoelectric sensor.
+                        Built an end-to-end <strong>ROS 2-based experimental platform</strong>
+                        for motor control, sensor feedback, synchronization, and data acquisition.
+                    </li>
+                    <li>
+                        Implemented a soft origami manipulator with rigid-body components in
+                        <strong>MuJoCo</strong>.
+                    </li>
+                    <li>
+                        Developed a <strong>system identification pipeline</strong> using a
+                        genetic algorithm (GA) to reduce the sim-to-real gap of the soft
+                        origami manipulator in MuJoCo.
                     </li>
                 </ul>
-
-                <br>
-                <h4>Related Paper:</h4>
-                    <p>
-                        H. Lee, <strong><u>S. Jang</u></strong>, T. Lee, J. Min, and Y. Cha, 
-                        “Localizing Internal Steel Defects using a Piezoelectric Sensor System 
-                        with a Robotic Hand”.
-                        <!em><!, Smart Materials and Structures><!/em><!, 2026> (Under Review)
-                    </p>
             </div>
-            <br>
+        </section>
+
+        <section id="research-contributed">
+            <h2>Research (Contributed)</h2>
             <div class="project">
                 <div class="project-header">
                     <h3>Wearable Soft Haptic Feedback Devices</h3>
@@ -238,39 +253,32 @@
                     </p>
             </div>
 
-            <p>
-            </p>
-        </section>
-
-        <section id="in-progress">
-            <h2>In Progress</h2>
-
             <div class="project">
                 <div class="project-header">
-                    <h3>System Identification of Soft Robots</h3>
-                    <span>Aug. 2025 – Present</span>
+                    <h3>Machine Learning for Sensor Signal Processing</h3>
+                    <span>May. 2025 – Dec. 2025</span>
                 </div>
-
                 <ul>
                     <li>
-                        Built an end-to-end <strong>ROS 2-based experimental platform</strong>
-                        for motor control, sensor feedback, synchronization, and data acquisition.
-                    </li>
-                    <li>
-                        Implemented a soft origami manipulator with rigid-body components in
-                        <strong>MuJoCo</strong>.
-                    </li>
-                    <li>
-                        Developed a <strong>system identification pipeline</strong> using a
-                        genetic algorithm (GA) to reduce the sim-to-real gap of the soft
-                        origami manipulator in MuJoCo.
+                    Developed a <strong>1D-CNN machine learning pipeline</strong> 
+                    for classifying location, depth, and existence 
+                    of the internal defects in steel plates with piezoelectric sensor.
                     </li>
                 </ul>
+
+                <br>
+                <h4>Related Paper:</h4>
+                    <p>
+                        H. Lee, <strong><u>S. Jang</u></strong>, T. Lee, J. Min, and Y. Cha, 
+                        “Localizing Internal Steel Defects using a Piezoelectric Sensor System 
+                        with a Robotic Hand”.
+                        <!em><!, Smart Materials and Structures><!/em><!, 2026> (Under Review)
+                    </p>
             </div>
 
             <div class="project">
                 <div class="project-header">
-                    <h3>Soft Actuator Control</h3>
+                    <h3>Soft Actuator Control (In Progress)</h3>
                     <span>Mar. 2026 – Present</span>
                 </div>
 
