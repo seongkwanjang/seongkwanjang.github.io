@@ -201,7 +201,8 @@ section p {
 }
 
 .project-image {
-    flex: 0 0 45%;
+    flex: 0 1 45%;
+    min-width: 400px;
     max-width: 500px;
 }
 
