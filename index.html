@@ -57,7 +57,8 @@
                         systems</strong> through <strong>physics-based understanding</strong> and 
                         <strong>data-driven methods.</strong>
                         My research has focused on key challenges in modeling and control of soft robots, 
-                        including hysteresis compensation and system identification.
+                        including hysteresis compensation of soft pneumatic actuators and 
+                        system identification of soft robots in rigid-body simulation.
                         I have also contributed to various projects including 
                         soft haptic feedback devices and machine-learning-based signal processing for soft sensors.
 
@@ -128,66 +129,68 @@
 
         <section id="research">
             <h2>Research</h2>
-            <div class="project-header">
-                <h3>Hysteresis in Soft Robotics</h3>
-                <span>Sep. 2024 – Aug. 2025</span>
-            </div>
-                <div class="project-container">
-                    <div class="project-image">
-                        <img
-                            src="Hys figure.png"
-                            alt="Hardware-based hysteresis compensation concept"
-                        >
-                    </div>
-
-                    <div class="project-content">
-
-                        <p>
-                            Hysteresis in soft pneumatic actuators leads to complex and unpredictable actuations, 
-                            resulting in difficulties of modeling and control. Previous studies 
-                            inevitably involve complex hysteresis modeling, 
-                            additional compensators or controllers for hysteresis compensation, 
-                            which in turn lead to high computational costs. In this paper, we propose 
-                            a novel hysteresis compensation approach by combining 
-                            two counteractive hysteretic components. As this hysteresis compensation approach 
-                            is only based on the hardware, complex modeling and additional compensators or controllers 
-                            are unnecessary.
-                        </p>
-
-                        <ul>
-                            <li>
-                                Extended prior work (bachelor's thesis) on 
-                                hysteresis of a Yoshimura origami pneumatic pump into a 
-                                <strong>novel hardware-based hysteresis compensation approach</strong>.
-                            </li>
-                            <li>
-                                Proposed a theoretical framework of the approach with 
-                                <strong>mathematical proof and parametric study</strong> 
-                                using the Prandtl-Ishlinskii (P-I) hysteresis model.
-                            </li>
-                            <li>
-                                <strong>Analyzed hysteresis compensation</strong> 
-                                using a within the combination of an origami pump and soft pneumatic actuator 
-                                with validation experiments and P-I model optimized with GA + Nelder-Mead algorithm.
-                            </li>
-                        </ul>
-
-                        <br>
-                    </div>
+            <div class="project">
+                <div class="project-header">
+                    <h3>Hysteresis in Soft Robotics</h3>
+                    <span>Sep. 2024 – Aug. 2025</span>
                 </div>
-                <br>
-                <h4>Related Paper:</h4>
-                    <p>
-                        <strong><u>S. Jang</u></strong> and Y. Cha,
-                        “Hysteresis Compensation Approach via Combination of Origami Pump
-                        and Soft Pneumatic Actuator,”
-                        <em>Sensors and Actuators A: Physical</em>, 2025.
-                        <a class="paper-link"
-                            href="https://doi.org/10.1016/j.sna.2025.117188"
-                            target="_blank"
-                            rel="noopener noreferrer">DOI ↗
-                        </a>
-                    </p>
+                    <div class="project-container">
+                        <div class="project-image">
+                            <img
+                                src="Hys figure.png"
+                                alt="Hardware-based hysteresis compensation concept"
+                            >
+                        </div>
+
+                        <div class="project-content">
+
+                            <p>
+                                Hysteresis in soft pneumatic actuators leads to complex and unpredictable actuations, 
+                                resulting in difficulties of modeling and control. Previous studies 
+                                inevitably involve complex hysteresis modeling, 
+                                additional compensators or controllers for hysteresis compensation, 
+                                which in turn lead to high computational costs. In this paper, we propose 
+                                a novel hysteresis compensation approach by combining 
+                                two counteractive hysteretic components. As this hysteresis compensation approach 
+                                is only based on the hardware, complex modeling and additional compensators or controllers 
+                                are unnecessary.
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    Extended prior work (bachelor's thesis) on 
+                                    hysteresis of a Yoshimura origami pneumatic pump into a 
+                                    <strong>novel hardware-based hysteresis compensation approach</strong>.
+                                </li>
+                                <li>
+                                    Proposed a theoretical framework of the approach with 
+                                    <strong>mathematical proof and parametric study</strong> 
+                                    using the Prandtl-Ishlinskii (P-I) hysteresis model.
+                                </li>
+                                <li>
+                                    <strong>Analyzed hysteresis compensation</strong> 
+                                    using a within the combination of an origami pump and soft pneumatic actuator 
+                                    with validation experiments and P-I model optimized with GA + Nelder-Mead algorithm.
+                                </li>
+                            </ul>
+
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <h4>Related Paper:</h4>
+                        <p>
+                            <strong><u>S. Jang</u></strong> and Y. Cha,
+                            “Hysteresis Compensation Approach via Combination of Origami Pump
+                            and Soft Pneumatic Actuator,”
+                            <em>Sensors and Actuators A: Physical</em>, 2025.
+                            <a class="paper-link"
+                                href="https://doi.org/10.1016/j.sna.2025.117188"
+                                target="_blank"
+                                rel="noopener noreferrer">DOI ↗
+                            </a>
+                        </p>
+            </div>
             <br>
 
             <div class="project">
@@ -221,12 +224,27 @@
                     <h3>Wearable Soft Haptic Feedback Devices</h3>
                     <span>Feb. 2023 – Dec. 2024</span>
                 </div>
-                <ul>
-                    <li>
-                        <strong>Designed</strong> the portable pneumatic pump unit with Yoshimura cylinder structures, 
-                        conducted fabrication, and experimentally evaluated the <strong>wearable multi-haptic feedback device</strong>.
-                    </li>
-                </ul>
+                    <div class="project-container">
+                        <div class="project-image">
+                            <img
+                                src="HF figure.png"
+                                alt="Haptic feedback concept"
+                            >
+                        </div>
+                    
+
+                        <div class="project-content">
+
+                            
+                            <ul>
+                                <li>
+                                    <strong>Designed</strong> the portable pneumatic pump unit with Yoshimura cylinder structures, 
+                                    conducted fabrication, and experimentally evaluated the <strong>wearable multi-haptic feedback device</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 <br>
                 <h4>Related Papers:</h4>
                     <p>
