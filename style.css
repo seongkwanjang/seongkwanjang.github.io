@@ -150,7 +150,9 @@ section p {
 
 /* Projects */
 .project {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.0px solid #ddd;
 }
 
 .project-header {
